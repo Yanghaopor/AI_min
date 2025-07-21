@@ -36,3 +36,21 @@ AiWife/\
 ├── 日志/                  # 日志与Linux相关脚本\
 ├── gif/                   # 动画资源\
 └── ...（其它文件/目录）
+
+# 主要文件介绍
+1. Main.py
+PyQt5桌宠主入口，负责UI、主线程、信号与AI交互。
+2. MorMain.py
+系统核心，负责数据库初始化、消息分发、命令执行、日志、CMD/MCP/Time等工具调用。
+3. AIchat.py
+封装AI对话、API请求、上下文管理，支持OpenAI/DashScope等API。
+4. System_prompt.txt
+详细定义AI角色、工具调用规范、记忆读取方式、MCP协议用法、行为约束等。
+5. SQL/memory_monitor.py
+记忆监控守护进程，负责多级记忆的自动摘要、升级、清理、AI总结。
+6. SQL/Read_0.py / Read_1.py / Read_2.py
+分别读取缓存、摘要、长期记忆数据库，输出JSON供AI分析。
+SQL/clear_all_databases.py
+一键清空所有记忆数据库并重置自增ID。
+7. Key.txt
+存储API Key、模型名、API URL等敏感配置。
