@@ -8,7 +8,7 @@
 4. 其它图形扩展
 
 # 项目结构
-AiWife/
+AiWife/\
 ├── Main.py                # 主程序入口，PyQt5桌宠主逻辑\
 ├── MorMain.py             # 系统核心，信号/线程/数据库/命令处理\
 ├── AIchat.py              # AI对话与API调用封装\
